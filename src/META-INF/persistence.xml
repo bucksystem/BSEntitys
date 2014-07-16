@@ -12,7 +12,7 @@
 		<class>br.com.bucksystem.entity.Empresa</class>
 		<class>br.com.bucksystem.entity.Grupo</class>
 		<class>br.com.bucksystem.entity.Modulo</class>
-		<class>br.com.bucksystem.entity.UsuariosTipo</class>
+		<class>br.com.bucksystem.entity.UsuarioTipo</class>
 		
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />

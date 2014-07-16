@@ -6,7 +6,7 @@ import br.com.bucksystem.entity.Empresa;
 import br.com.bucksystem.entity.Grupo;
 import br.com.bucksystem.entity.Modulo;
 import br.com.bucksystem.entity.Usuario;
-import br.com.bucksystem.entity.UsuariosTipo;
+import br.com.bucksystem.entity.UsuarioTipo;
 
 public class PopulaBanco {
 
@@ -23,7 +23,7 @@ public class PopulaBanco {
 		empresa.setConsistircnpjcpf( (byte)0 );
 		em.persist(empresa);
 		
-		UsuariosTipo usuariosTipo = new UsuariosTipo();
+		UsuarioTipo usuariosTipo = new UsuarioTipo();
 		usuariosTipo.setUsuariotipo( "Supervisor");
 		usuariosTipo.setMaster( (byte)1 );
 		em.persist(usuariosTipo);
@@ -38,17 +38,17 @@ public class PopulaBanco {
 		usuario.setEmpresa2(empresa);
 		em.persist(usuario);
 		
-		UsuariosTipo usuariosTipo2 = new UsuariosTipo();
+		UsuarioTipo usuariosTipo2 = new UsuarioTipo();
 		usuariosTipo2.setUsuariotipo( "Normal");
 		usuariosTipo2.setMaster( (byte)0 );
 		em.persist(usuariosTipo2);
 		
-		UsuariosTipo usuariosTipo3 = new UsuariosTipo();
+		UsuarioTipo usuariosTipo3 = new UsuarioTipo();
 		usuariosTipo3.setUsuariotipo( "Supervisor de Sistema");
 		usuariosTipo3.setMaster( (byte)0 );
 		em.persist(usuariosTipo3);
 		
-		UsuariosTipo usuariosTipo4 = new UsuariosTipo();
+		UsuarioTipo usuariosTipo4 = new UsuarioTipo();
 		usuariosTipo4.setUsuariotipo( "Coordenador de Sistema");
 		usuariosTipo4.setMaster( (byte)0 );
 		em.persist(usuariosTipo4);

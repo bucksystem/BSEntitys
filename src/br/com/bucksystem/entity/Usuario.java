@@ -44,7 +44,7 @@ public class Usuario implements Serializable {
 	//bi-directional many-to-one association to UsuariosTipo
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="USUA_ChpUsuarioTipo")
-	private UsuariosTipo usuariosTipo;
+	private UsuarioTipo usuariosTipo;
 
 	public Usuario() {
 	}
@@ -105,11 +105,11 @@ public class Usuario implements Serializable {
 		this.empresa2 = empresa2;
 	}
 
-	public UsuariosTipo getUsuariosTipo() {
+	public UsuarioTipo getUsuariosTipo() {
 		return this.usuariosTipo;
 	}
 
-	public void setUsuariosTipo(UsuariosTipo usuariosTipo) {
+	public void setUsuariosTipo(UsuarioTipo usuariosTipo) {
 		this.usuariosTipo = usuariosTipo;
 	}
 
