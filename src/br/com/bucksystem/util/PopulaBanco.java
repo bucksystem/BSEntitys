@@ -54,13 +54,13 @@ public class PopulaBanco {
 		em.persist(usuariosTipo4);
 
 		Modulo modulo = new Modulo();
-		modulo.setModulo("Usuários (t)");
+		modulo.setModulox("Usuarios (t)");
 		modulo.setSistemas( (byte)0 );
 		modulo.setEstrutmensal( (byte)0 );
 		em.persist(modulo);
 		
 		Grupo grupo = new Grupo();
-		grupo.setGrupo("Informática");
+		grupo.setGrupo("Informatica");
 		grupo.setModulo(modulo);
 		em.persist(grupo);
 		
@@ -70,19 +70,19 @@ public class PopulaBanco {
 		em.persist(grupo2);
 		
 		Modulo modulo2 = new Modulo();
-		modulo2.setModulo("Itens (t)");
+		modulo2.setModulox("Itens (t)");
 		modulo2.setSistemas( (byte)0 );
 		modulo2.setEstrutmensal( (byte)0 );
 		em.persist(modulo2);
 		
 		Modulo modulo3 = new Modulo();
-		modulo3.setModulo("Contas a Receber");
+		modulo3.setModulox("Contas a Receber");
 		modulo3.setSistemas( (byte)1 );
 		modulo3.setEstrutmensal( (byte)1 );
 		em.persist(modulo3);
 		
 		Modulo modulo4 = new Modulo();
-		modulo4.setModulo("Contabilidade");
+		modulo4.setModulox("Contabilidade");
 		modulo4.setSistemas( (byte)1 );
 		modulo4.setEstrutmensal( (byte)1 );
 		em.persist(modulo4);

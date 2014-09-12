@@ -22,7 +22,7 @@ public class Modulo implements Serializable {
 	private int idmodulo;
 
 	@Column(name="MODU_ChaModulo")
-	private String modulo;
+	private String modulox;
 
 	@Column(name="MODU_OpbEstrutMensal")
 	private byte estrutmensal;
@@ -48,12 +48,12 @@ public class Modulo implements Serializable {
 		this.idmodulo = idmodulo;
 	}
 
-	public String getModulo() {
-		return this.modulo;
+	public String getModulox() {
+		return this.modulox;
 	}
 
-	public void setModulo(String modulo) {
-		this.modulo = modulo;
+	public void setModulox(String modulo) {
+		this.modulox = modulo;
 	}
 
 	public byte getEstrutmensal() {

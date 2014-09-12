@@ -20,7 +20,6 @@ import javax.persistence.Version;
 
 /**
  * The persistent class for the Empresas database table.
- * 
  */
 @Entity
 @Table(name="Empresas")
